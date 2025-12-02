@@ -1,8 +1,4 @@
 # :zap: PortFolio 프로젝트 소개
-:octocat: 바로가기 https://light9639-portfolio.netlify.app/
-
-<img src="https://raw.githubusercontent.com/light9639/PortFolio/master/src/img/light9639.github.io_PortFolio_Dark.png" alt="Dark" />
-<img src="https://raw.githubusercontent.com/light9639/PortFolio/master/src/img/light9639.github.io_PortFolio_.png" alt="Light" />
 
 :sparkles: 포트폴리오 소개 사이트입니다. :sparkles:
 
@@ -14,10 +10,7 @@ yarn vite
 yarn dev
 ```
 를 누르고 http://127.0.0.1:5173/ 로 접속하면 미리보기 화면을 띄울 수 있습니다.
-## :calendar: 개발인원 및 기간
-- 1인 개발 2022.07.25 ~ 2022.07.29(5일 소요)
-## :dart: 개발 목적
-- 기업제출용 포트폴리오 소개 사이트가 필요하여 만들게 되었습니다.
+
 ## :black_nib: 구현기능
 - 홈페이지 About Me 버튼을 클릭하시면 소개 페이지로 이동합니다.
 - 홈페이지 프로젝트 보러가기 버튼을 클릭하시면 작성된 포트폴리오을 간략하게 보실수 있습니다.
