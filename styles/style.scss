@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$pc1024: 1024px;
+$mobile767: 767px;
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@mixin respond($size) {
+  @media screen and (max-width:$size) {
+    @content;
+  }
+}
+
+:root {
+  font-family: 'Inter', 'Avenir', 'Helvetica', 'Arial', 'RegularFont', 'NanumGothic', sans-serif !important;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* body 속 여러 요소들 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  background: url("https://raw.githubusercontent.com/light9639/PortFolio/master/src/img/background.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+
+    @include respond($mobile767) {
+      width: 8px;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(0, 168, 240, 0.5);
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);
+  }
+
+  #root {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include respond($pc1024) {
+      padding: 1rem;
+    }
+  }
+
+  .logo {
+    -webkit-filter: drop-shadow(0 0 2em rgba(17, 142, 255, 0.5));
+    filter: drop-shadow(0 0 2em rgba(17, 142, 255, 0.5));
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .read-the-docs {
+    color: #888;
+  }
+
+  a {
+    font-weight: 500;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  h1 {
+    font-size: 3em;
+    line-height: 1.1;
+    font-weight: 700;
+
+    @include respond($pc1024) {
+      font-size: 2.5em;
+    }
+
+    @include respond($mobile767) {
+      font-size: 2em;
+    }
+  }
+
+  h2 {
+    font-size: 2.5em;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  .introduce_Wrapper:nth-child(3) .introduce_box .introduce_img {
+    background-position-y: -75px !important;
+  }
+
+  #toggleDarkMode:hover {
+    border-color: #118eff;
+  }
+}

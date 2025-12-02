@@ -1,0 +1,87 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #118eff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+.dark {
+    body {
+        background: url("https://raw.githubusercontent.com/light9639/PortFolio/master/src/img/bakcground_dark.jpg");
+    }
+
+    h1,
+    h2,
+    h3,
+    a,
+    p,
+    .tech_skill,
+    span {
+        color: #fff;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    .Introduce_Date {
+        color: transparent;
+    }
+
+    .footer_text,
+    .tech_skill_box {
+        color: #118eff;
+    }
+
+    .Nav_text :hover {
+        opacity: 0.5;
+    }
+
+    .About_box_behind {
+        --tw-bg-opacity: 1;
+        background-color: rgb(100 116 139/var(--tw-bg-opacity));
+    }
+
+    .About_box,
+    .introduce_box {
+        --tw-bg-opacity: 1;
+        background-color: rgb(30 41 59/var(--tw-bg-opacity));
+    }
+
+    #toggleButton,
+    #toggleDarkMode {
+        --tw-bg-opacity: 1;
+        background-color: rgb(30 41 59/var(--tw-bg-opacity));
+        border: 1px solid #334155;
+    }
+
+    #toggleButton div {
+        background: #60a5fa;
+    }
+
+    .Light_button {
+        display: none;
+    }
+
+    .Dark_button {
+        display: block;
+    }
+
+    .toggleMenuBar {
+        background: #fff;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: #dbeafe;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: #334155;
+    }
+}
