@@ -19,7 +19,7 @@ export default function Site(): JSX.Element {
 
     return (
         <React.Fragment>
-            <h2 className="mt-10 text-3xl font-bold text-center sm:text-4xl"><span className="text_gradient2">Light9639's</span> 사이트 모음</h2>
+            <h2 className="mt-10 text-3xl font-bold text-center sm:text-4xl"><span className="text_gradient2">Inno's</span>Sites</h2>
             <div className="flex flex-wrap -m-3 mt-10 max-w-5xl mx-auto">
                 <React.Fragment>
                     {
