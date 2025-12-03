@@ -54,7 +54,7 @@ export default function Site(): JSX.Element {
                                             // style={{ backgroundImage: "url(" + item.url + ")", backgroundSize: "cover", backgroundPosition: "center" }}
                                         >
                                             <a href="">
-                                                <img style={{backgroundSize: "cover", backgroundPosition: "center"}} src={item.url} alt="" />
+                                                <img src={item.url} />
                                             </a>
                                         </div>
                                         <div className="p-4 flex-1 flex flex-col">
