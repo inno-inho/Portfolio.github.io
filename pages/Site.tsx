@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 //     let [list, setList] = useState<SiteType[]>([]);
 
 //     const result = useQuery(['Query'], () =>
-//         axios.get('https://raw.githubusercontent.com/light9639/PortFolio/master/data/siteData.json')
+//         axios.get('https://raw.githubusercontent.com/inno-inho/Portfolio.github.io/refs/heads/main/data/siteData.json')
 //             .then((res) => { return setList(res.data) }),
 //     )
 
@@ -18,7 +18,8 @@ import "aos/dist/aos.css";
 //     })
 
 export default function Site(): JSX.Element {
-    // useQuery로 데이터 가져오기
+
+        // useQuery로 데이터 가져오기
     const { data: list, isLoading, isError } = useQuery<SiteType[]>({
         queryKey: ['siteList'],
         queryFn: () =>
@@ -28,6 +29,7 @@ export default function Site(): JSX.Element {
 
     useEffect(() => {
         AOS.init();
+
     }, []); // 한 번만 부를거임
 
     if (isLoading){
@@ -39,18 +41,22 @@ export default function Site(): JSX.Element {
 
     return (
         <React.Fragment>
-            <h2 className="mt-10 text-3xl font-bold text-center sm:text-4xl"><span className="text_gradient2">Inno's</span>Sites</h2>
+            <h2 className="mt-10 text-3xl font-bold text-center sm:text-4xl"><span className="text_gradient2">Inno's</span> Sites</h2>
             <div className="flex flex-wrap -m-3 mt-10 max-w-5xl mx-auto">
                 <React.Fragment>
                     {
                         list.map(function (item, idx: number) {
+                            console.log('item', item);
                             return (
                                 <div className="w-full sm:w-1/1 md:w-1/2 flex flex-col px-2 md:px-2 lg:px-3 my-5" key={idx} data-aos="fade-up" data-aos-duration={idx % 2 == 0 ? "1000" : "1150"} data-aos-easing="ease-in-out" data-aos-once="true">
                                     <div className="introduce_box bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col hover:scale-105 hover:shadow-2xl duration-500">
-                                        <div
-                                            className="bg-cover h-80"
-                                            style={{ backgroundImage: "url(" + item.url + ")", backgroundSize: "cover", backgroundPosition: "center" }}
-                                        ></div>
+                                        <div className="bg-cover h-80"
+                                            // style={{ backgroundImage: "url(" + item.url + ")", backgroundSize: "cover", backgroundPosition: "center" }}
+                                        >
+                                            <a href="">
+                                                <img style={{backgroundSize: "cover", backgroundPosition: "center"}} src={item.url} alt="" />
+                                            </a>
+                                        </div>
                                         <div className="p-4 flex-1 flex flex-col">
                                             <h3 className="font-semibold mb-4 text-2xl">{item.title}</h3>
                                             <div className="mb-4 text-grey-darker text-base flex-1">

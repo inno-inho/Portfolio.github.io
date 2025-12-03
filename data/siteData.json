@@ -1,12 +1,12 @@
 [
     {
-        "url": "https://icon.icepanel.io/Technology/svg/GitHub.svg",
+        "url": "https://raw.githubusercontent.com/light9639/PortFolio/master/src/img/MyGitHubProfile.png",
         "title": "Github page",
         "contents": "現在、Githubに勉強したものや実習したprojectを載せています。",
         "href": "https://github.com/inno-inho"
     },
     {
-        "url": "https://raw.githubusercontent.com/inno-inho/Portfolio.github.io/main/src/img/MyGitHubProfile.png",
+        "url": "https://raw.githubusercontent.com/light9639/PortFolio/master/src/img/MyVelog.png",
         "title": "My Studying record",
         "contents": "私が勉強したことを記録するために書いているblogです。",
         "href": "https://velog.io/@innoinho/posts"
