@@ -5,17 +5,37 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-export default function Site(): JSX.Element {
-    let [list, setList] = useState<SiteType[]>([]);
+// export default function Site(): JSX.Element {
+//     let [list, setList] = useState<SiteType[]>([]);
 
-    const result = useQuery(['Query'], () =>
-        axios.get('https://raw.githubusercontent.com/light9639/PortFolio/master/data/siteData.json')
-            .then((res) => { return setList(res.data) }),
-    )
+//     const result = useQuery(['Query'], () =>
+//         axios.get('https://raw.githubusercontent.com/light9639/PortFolio/master/data/siteData.json')
+//             .then((res) => { return setList(res.data) }),
+//     )
+
+//     useEffect(() => {
+//         AOS.init();
+//     })
+
+export default function Site(): JSX.Element {
+    // useQuery로 데이터 가져오기
+    const { data: list, isLoading, isError } = useQuery<SiteType[]>({
+        queryKey: ['siteList'],
+        queryFn: () =>
+            axios.get("https://raw.githubusercontent.com/inno-inho/Portfolio.github.io/refs/heads/main/data/siteData.json")
+                .then((res) => res.data),
+    });
 
     useEffect(() => {
         AOS.init();
-    })
+    }, []); // 한 번만 부를거임
+
+    if (isLoading){
+        return <div>로딩중 ...</div>
+    }
+    if(isError || !list){
+        return <div>데이터를 불러오는데 실패했습니다</div>
+    }
 
     return (
         <React.Fragment>
@@ -38,7 +58,7 @@ export default function Site(): JSX.Element {
                                             </div>
                                             <div className="border-t border-grey-light pt-7 pb-3 text-1xl text-grey hover:text-red no-underline tracking-wide">
                                                 <a href={item.href} className="Blue_box px-5 py-2.5 rounded-md ">
-                                                    <span className="text-white text-base md:text-lg line-clamp-1">{item.title}로 이동</span>
+                                                    <span className="text-white text-base md:text-lg line-clamp-1">{item.title}へ移動</span>
                                                 </a>
                                             </div>
                                         </div>
