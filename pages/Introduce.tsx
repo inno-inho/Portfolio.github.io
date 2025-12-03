@@ -95,16 +95,16 @@ export default function Introduce(): JSX.Element {
                                         </a>
                                     </div>
                                     <div className="pt-5 text-1xl text-grey hover:text-red uppercase no-underline tracking-wide">
-                                        <span className="hidden md:inline-block pb-0 md:pb-1 lg:pb-0">프로젝트 바로가기 : </span> <br className="hidden md:block lg:hidden" />
+                                        {/* <span className="hidden md:inline-block pb-0 md:pb-1 lg:pb-0">프로젝트 바로가기 : </span> <br className="hidden md:block lg:hidden" />
                                         <a href={item.href2} target="_blank" rel="noopener noreferrer" className="Blue_box inline-flex py-1.5 px-3.5 text-base focus:outline-none md:ml-1">
                                             <span>포트폴리오 페이지로 이동</span>
-                                        </a>
+                                        </a> */}
                                     </div>
                                     <div className="pr-4 py-4 border-t border-grey-light mt-auto">
                                         <span className="tech_skill hidden lg:inline-block pr-3 py-1 text-sm mr-2">사용기술 :</span>
-                                        <span className="tech_skill_box bg-[#dbeafe] inline-block rounded-md px-3 py-1 text-sm font-semibold text-[#118eff] mr-2"># {item.use1}</span>
-                                        <span className="tech_skill_box bg-[#dbeafe] inline-block rounded-md px-3 py-1 text-sm font-semibold text-[#118eff] mr-2"># {item.use2}</span>
-                                        <span className="tech_skill_box bg-[#dbeafe] inline-block rounded-md px-3 py-1 text-sm font-semibold text-[#118eff]"># {item.use3}</span>
+                                        <span className="tech_skill_box bg-[#dbeafe] inline-block rounded-md px-3 py-1 text-sm font-semibold text-[#118eff] mr-2"> {item.use1}</span>
+                                        <span className="tech_skill_box bg-[#dbeafe] inline-block rounded-md px-3 py-1 text-sm font-semibold text-[#118eff] mr-2"> {item.use2}</span>
+                                        <span className="tech_skill_box bg-[#dbeafe] inline-block rounded-md px-3 py-1 text-sm font-semibold text-[#118eff]"> {item.use3}</span>
                                     </div>
                                 </div>
                             </div>

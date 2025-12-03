@@ -5,7 +5,7 @@
         "contents": "portfolioを紹介するサイトです。",
         "time": "2025.11.25 ~ 2025.12.05",
         "href1": "https://github.com/inno-inho/Portfolio.github.io",
-        "href2": "/",
+        "href2": "",
         "member": "1人",
         "use1": "React",
         "use2": "TypeScript",
@@ -14,7 +14,7 @@
     {
         "url": "https://raw.githubusercontent.com/inno-inho/Portfolio.github.io/main/src/img/jobayologo.png",
         "title": "JOB-A-YO",
-        "contents": "私にとっても初めでチームにとっても初めてのプロジェクトです。",
+        "contents": "すべてのことが初めてだったプロジェクトです。",
         "time": "2025.11.18 ~ 2025.12.02",
         "time2": "",
         "href1": "https://github.com/rombird/JOB-A-YO",
