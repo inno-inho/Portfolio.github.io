@@ -2,24 +2,24 @@
     {
         "url": "https://raw.githubusercontent.com/light9639/PortFolio/master/src/img/laptop-working.gif",
         "title": "포트폴리오 사이트",
-        "contents": "React와 TypeScript로 만든 포트폴리오 소개 사이트입니다.",
+        "contents": "portfolioを紹介するサイトです。",
         "time": "2025.11.25 ~ 2025.12.05",
-        "href1": "https://github.com/inno-inho/Portfolio.github.io/tree/main",
+        "href1": "https://github.com/inno-inho/Portfolio.github.io",
         "href2": "/",
-        "member": "1인 개발",
+        "member": "1人",
         "use1": "React",
         "use2": "TypeScript",
-        "use3": "Vite"
+        "use3": ""
     },
     {
         "url": "https://raw.githubusercontent.com/inno-inho/Portfolio.github.io/main/src/img/jobayologo.png",
         "title": "JOB-A-YO",
-        "contents": "My first project",
+        "contents": "私にとっても初めでチームにとっても初めてのプロジェクトです。",
         "time": "2025.11.18 ~ 2025.12.02",
         "time2": "",
-        "href1": "https://github.com/light9639/Shoe-Store",
+        "href1": "https://github.com/rombird/JOB-A-YO",
         "href2": "",
-        "member": "3인 개발",
+        "member": "3人",
         "use1": "SpringBoot",
         "use2": "React",
         "use3": "JavaScript"
