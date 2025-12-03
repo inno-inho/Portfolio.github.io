@@ -15,12 +15,12 @@
         "title": "JOB-A-YO",
         "contents": "My first project",
         "time": "2025.11.18 ~ 2025.12.02",
-        "time2": "2022.12.15 ~ 2023.02.15",
+        "time2": "",
         "href1": "https://github.com/light9639/Shoe-Store",
-        "href2": "https://shoe-store-lemon.vercel.app/",
-        "use1": "Next.js",
-        "use2": "TypeScript",
-        "use3": "Redux"
+        "href2": "",
+        "use1": "SpringBoot",
+        "use2": "React",
+        "use3": "JavaScript"
     },
     {
         "url": "https://raw.githubusercontent.com/light9639/PortFolio/master/src/img/wonfesta_event.jpg",
