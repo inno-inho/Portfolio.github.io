@@ -9,6 +9,7 @@ export interface IntroduceType {
     use1: string;
     use2: string;
     use3: string;
+    member: string;
 }
 
 export interface SiteType {
