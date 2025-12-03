@@ -60,6 +60,7 @@ export default function Introduce(): JSX.Element {
             <h2 className="mt-10 text-3xl font-bold text-center sm:text-4xl">작성된 프로젝트 <span className="text_gradient2">{list.length}개</span></h2>
             <div className="flex flex-wrap -m-3 mt-10 max-w-5xl mx-auto">
                 {list.map(function (item: IntroduceType, idx: number) {
+                    console.log("아이템", item);
                     return (
                         <div 
                             className="introduce_Wrapper w-full sm:w-1/1 md:w-1/2 flex flex-col px-2 lg:px-3 my-5" 

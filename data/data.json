@@ -11,10 +11,10 @@
         "use3": "Vite"
     },
     {
-        "url": "https://raw.githubusercontent.com/light9639/ImgStorage/main/shoestore/index/mainBanner01.png",
-        "title": "Shoe Store",
-        "contents": "Next.js와 Redux로 만든 신발 쇼핑몰 사이트입니다.",
-        "time": "2022.09.01 ~ 2022.09.30",
+        "url": "https://raw.githubusercontent.com/inno-inho/Portfolio.github.io/main/src/img/jobayologo.png",
+        "title": "JOB-A-YO",
+        "contents": "My first project",
+        "time": "2025.11.18 ~ 2025.12.02",
         "time2": "2022.12.15 ~ 2023.02.15",
         "href1": "https://github.com/light9639/Shoe-Store",
         "href2": "https://shoe-store-lemon.vercel.app/",
