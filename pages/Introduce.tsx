@@ -85,7 +85,7 @@ export default function Introduce(): JSX.Element {
                                         <p>
                                             <span className="hidden md:inline-block pb-2 md:pb-1 lg:pb-0">기간/인원 :</span> <br className="hidden md:block lg:hidden" />
                                             <span className="Introduce_Date bg-gradient-to-r from-violet-500 to-indigo-500 text-transparent bg-clip-text font-semibold">{item.time}</span> <br className={`${item.time2 ? "block" : "hidden"}`} />
-                                            <span className={`${item.time2 ? "inline-block" : "hidden"} Introduce_Date bg-gradient-to-r from-violet-500 to-indigo-500 text-transparent bg-clip-text font-semibold`}>{item.time2}</span> / <span className="font-medium">1인 개발</span>
+                                            <span className={`${item.time2 ? "inline-block" : "hidden"} Introduce_Date bg-gradient-to-r from-violet-500 to-indigo-500 text-transparent bg-clip-text font-semibold`}>{item.time2}</span> / <span className="font-medium">{item.member}</span>
                                         </p>
                                     </div>
                                     <div className="border-t border-grey-light pt-5 text-1xl text-grey hover:text-red no-underline tracking-wide">
