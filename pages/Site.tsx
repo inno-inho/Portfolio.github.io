@@ -53,7 +53,7 @@ export default function Site(): JSX.Element {
                                         <div className="bg-cover h-80"
                                             // style={{ backgroundImage: "url(" + item.url + ")", backgroundSize: "cover", backgroundPosition: "center" }}
                                         >
-                                            <a href="">
+                                            <a href={item.href}>
                                                 <img src={item.url} />
                                             </a>
                                         </div>

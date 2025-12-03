@@ -25,7 +25,12 @@ export default function Nav(): JSX.Element {
                         <Link to="/About">{<span className="Nav_text hidden lg:block mr-5">소개</span>}</Link>
                         <Link to="/Site">{<span className="Nav_text hidden lg:block mr-5">사이트</span>}</Link>
                         <Link to="/introduce">{<span className="Nav_text hidden lg:block mr-5">프로젝트</span>}</Link>
-                        <a href="https://open.kakao.com/o/s6c0Jpxe" className="Nav_text hidden lg:block mr-5">연락하기</a>
+                        <a 
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=zergling2565@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="Nav_text hidden lg:block mr-5">연락하기
+                        </a>
 
                         <DarkModeToggle></DarkModeToggle>
 
