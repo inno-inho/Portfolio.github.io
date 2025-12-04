@@ -1,3 +1,7 @@
+Click this address will take you to my portfolio site.
+https://snazzy-cheesecake-cd7b1b.netlify.app/
+
+
 ## :rocket: 시작하는 법
 미리보기를 원하신다면 다운로드 후 yarn을 설치하고
 ```bash
