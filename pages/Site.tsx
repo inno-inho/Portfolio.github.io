@@ -33,10 +33,10 @@ export default function Site(): JSX.Element {
     }, []); // 한 번만 부를거임
 
     if (isLoading){
-        return <div>로딩중 ...</div>
+        return <div>Loading．．．</div>
     }
     if(isError || !list){
-        return <div>데이터를 불러오는데 실패했습니다</div>
+        return <div>failed　pulling　data</div>
     }
 
     return (

@@ -17,7 +17,7 @@ export default function About(): JSX.Element {
                             <div data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
                                 <h1 className="text-3xl font-extrabold pb-10"><span className="text_gradient2">About Me</span></h1>
                                 <p className='pb-2'><span className='text-2xl'>📝</span> Name : Inho Lee</p>
-                                <p className='pb-2'><span className='text-2xl'>📆</span> Birthday: 1996년 02월 19일</p>
+                                <p className='pb-2'><span className='text-2xl'>📆</span> Birthday: 1996.02.15</p>
                                 <p className='pb-2'><span className='text-2xl'>🏠</span> Address : Daegu, Republic of Korea</p>
                                 {/* <p className='pb-2'><span className='text-2xl'>📱</span> Phone : </p> */}
                                 <p className='pb-2'><span className='text-2xl'>📧</span> E-mail : zergling2565@gmail.com</p>

@@ -15,7 +15,7 @@ const Loading = () => (
                 </svg>
                 <span className="sr-only">Loading...</span>
             </div>
-            <p className="mt-4 text-xl font-medium text-gray-700">데이터를 로드하는 중입니다.</p>
+            <p className="mt-4 text-xl font-medium text-gray-700">Loading data...</p>
         </div>
     </React.Fragment>
 );
@@ -56,7 +56,7 @@ export default function Introduce(): JSX.Element {
 
     return (
         <React.Fragment>
-            <h2 className="mt-10 text-3xl font-bold text-center sm:text-4xl">작성된 프로젝트 <span className="text_gradient2">{list.length}개</span></h2>
+            <h2 className="mt-10 text-3xl font-bold text-center sm:text-4xl">作成したProject <span className="text_gradient2">{list.length}個</span></h2>
             <div className="flex flex-wrap -m-3 mt-10 max-w-5xl mx-auto">
                 {list.map(function (item: IntroduceType, idx: number) {
                     console.log("아이템", item);
@@ -82,15 +82,15 @@ export default function Introduce(): JSX.Element {
                                     </div>
                                     <div className="border-t border-grey-light pt-4 mb-4 text-grey-darker text-base">
                                         <p>
-                                            <span className="hidden md:inline-block pb-2 md:pb-1 lg:pb-0">기간/인원 :</span> <br className="hidden md:block lg:hidden" />
+                                            <span className="hidden md:inline-block pb-2 md:pb-1 lg:pb-0">期間/人数 :</span> <br className="hidden md:block lg:hidden" />
                                             <span className="Introduce_Date bg-gradient-to-r from-violet-500 to-indigo-500 text-transparent bg-clip-text font-semibold">{item.time}</span> <br className={`${item.time2 ? "block" : "hidden"}`} />
                                             <span className={`${item.time2 ? "inline-block" : "hidden"} Introduce_Date bg-gradient-to-r from-violet-500 to-indigo-500 text-transparent bg-clip-text font-semibold`}>{item.time2}</span> / <span className="font-medium">{item.member}</span>
                                         </p>
                                     </div>
                                     <div className="border-t border-grey-light pt-5 text-1xl text-grey hover:text-red no-underline tracking-wide">
-                                        <span className="hidden md:inline-block pb-0 md:pb-1 lg:pb-0">Github 바로가기 : </span> <br className="hidden md:block lg:hidden" />
+                                        <span className="hidden md:inline-block pb-0 md:pb-1 lg:pb-0">Githubへ移動 : </span> <br className="hidden md:block lg:hidden" />
                                         <a href={item.href1} target="_blank" rel="noopener noreferrer" className="Blue_box inline-flex py-1.5 px-3.5 text-base focus:outline-none md:ml-1">
-                                            <span>Github 페이지로 이동</span>
+                                            <span>Github pageへ移動</span>
                                         </a>
                                     </div>
                                     <div className="pt-5 text-1xl text-grey hover:text-red uppercase no-underline tracking-wide">
@@ -100,7 +100,7 @@ export default function Introduce(): JSX.Element {
                                         </a> */}
                                     </div>
                                     <div className="pr-4 py-4 border-t border-grey-light mt-auto">
-                                        <span className="tech_skill hidden lg:inline-block pr-3 py-1 text-sm mr-2">사용기술 :</span>
+                                        <span className="tech_skill hidden lg:inline-block pr-3 py-1 text-sm mr-2">使用した技術 :</span>
                                         <span className="tech_skill_box bg-[#dbeafe] inline-block rounded-md px-3 py-1 text-sm font-semibold text-[#118eff] mr-2"> {item.use1}</span>
                                         <span className="tech_skill_box bg-[#dbeafe] inline-block rounded-md px-3 py-1 text-sm font-semibold text-[#118eff] mr-2"> {item.use2}</span>
                                         <span className="tech_skill_box bg-[#dbeafe] inline-block rounded-md px-3 py-1 text-sm font-semibold text-[#118eff]"> {item.use3}</span>

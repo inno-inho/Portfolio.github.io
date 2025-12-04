@@ -21,15 +21,15 @@ export default function Nav(): JSX.Element {
                         </a>
                     </Link>
                     <nav className={`${ReduxBoolean == false ? "relative z-[60]" : ""} flex flex-wrap items-center text-base justify-center ml-auto gap-0 -mr-1`}>
-                        <Link to="/">{<span className="Nav_text hidden lg:block mr-5">홈</span>}</Link>
-                        <Link to="/About">{<span className="Nav_text hidden lg:block mr-5">소개</span>}</Link>
-                        <Link to="/Site">{<span className="Nav_text hidden lg:block mr-5">사이트</span>}</Link>
-                        <Link to="/introduce">{<span className="Nav_text hidden lg:block mr-5">프로젝트</span>}</Link>
+                        <Link to="/">{<span className="Nav_text hidden lg:block mr-5">Home</span>}</Link>
+                        <Link to="/About">{<span className="Nav_text hidden lg:block mr-5">Introduce</span>}</Link>
+                        <Link to="/Site">{<span className="Nav_text hidden lg:block mr-5">Site</span>}</Link>
+                        <Link to="/introduce">{<span className="Nav_text hidden lg:block mr-5">Project</span>}</Link>
                         <a 
                             href="https://mail.google.com/mail/?view=cm&fs=1&to=zergling2565@gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="Nav_text hidden lg:block mr-5">연락하기
+                            className="Nav_text hidden lg:block mr-5">Connect
                         </a>
 
                         <DarkModeToggle></DarkModeToggle>
