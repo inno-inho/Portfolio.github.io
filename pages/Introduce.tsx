@@ -5,7 +5,6 @@ import React, { useEffect } from "react";
 import AOS from "aos"; 
 import "aos/dist/aos.css"; 
 
-// 1. 사용자님께서 제공하신 Loading 컴포넌트 코드를 이 파일 내부에 정의
 const Loading = () => (
     <React.Fragment>
         <div className="text-center mx-auto my-10 flex flex-col items-center justify-center h-full min-h-[300px]">
