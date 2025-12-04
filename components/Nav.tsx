@@ -29,7 +29,7 @@ export default function Nav(): JSX.Element {
                             href="https://mail.google.com/mail/?view=cm&fs=1&to=zergling2565@gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="Nav_text hidden lg:block mr-5">Connect
+                            className="Nav_text hidden lg:block mr-5">Contact　me
                         </a>
 
                         <DarkModeToggle></DarkModeToggle>
